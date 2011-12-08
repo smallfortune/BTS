@@ -25,22 +25,27 @@ get_header(); ?>
     
     <?php while (have_posts()) : the_post(); ?>
         <div class="post-news">
-            <h1><?php the_title(); ?></h2>
-            <?php //the_content( 'Read the full post»' ); ?>
-            <div class="thumb">
-                <?php the_post_thumbnail('medium');?>
+            <div class="top-news">
+                <h2><?php the_title(); ?></h2>
             </div>
+            <?php //the_content( 'Read the full post»' ); ?>
+            <?php if(has_post_thumbnail()):?>
+            <div class="thumb">
+                <a href="<?php the_permalink();?>"><?php the_post_thumbnail('medium');?></a>
+            </div>
+            <?php endif;?>
             <div class="excerpt">
                 <?php the_excerpt('Read the full post»' );?>
             </div>
             
         </div>
         <div class="post-footer">
-                <a href="#" title="read more"></a>
-                <div class="social">
-                    <p class="date"><?php the_time('F jS, Y') ?></p>
-                </div>
+            <a href="<?php the_permalink(); ?>" title="read more" class="read_more_news"></a>
+            <div class="social">
+                <p class="date"><?php the_time('F jS, Y') ?></p>
+                <script charset="utf-8" type="text/javascript">var switchTo5x=true;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'wp.e5e164fb-0493-4667-b8f5-468dd1e6d80f'});var st_type='wordpress3.2.1';</script>
             </div>
+        </div>
     <?php endwhile;?>
 
     

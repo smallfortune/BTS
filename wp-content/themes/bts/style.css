@@ -126,7 +126,11 @@ header#branding nav #menu_right .menu ul li a{
 }
 /* =Content
 -------------------------------------------------------------- */
-
+#main{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .sticky {
 }
 .entry-meta {
@@ -373,7 +377,7 @@ body{
     color: #363636;
 }
 p{
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.6;
 }
 p a{
@@ -385,9 +389,18 @@ p a{
     background: url('images/bg-grey.jpg') repeat top left;
     overflow: hidden;
     padding: 20px;
+    font-family: verdana;
 }
-.post-news h2{
-    border-bottom: 1px solid #
+.post-news .top-news{
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.post-news .top-news h2{
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 15px;
+    font-size: 24px;
 }
 .post-news .thumb{
     display: block;
@@ -413,5 +426,22 @@ p a{
     margin-bottom: 50px;
     color: #fff;
     clear: both;
+    overflow: hidden;
     background: url('images/bg-dark_blue.jpg') repeat top left;
+}
+.post-footer a.read_more_news{
+    display: block;
+    width: 195px;
+    height: 40px;
+    float: left;
+    box-shadow: 3px 3px 30px #000;
+    background: url('images/btn-readmore.png') no-repeat bottom left;
+}
+.post-footer a.read_more_news:hover{
+    background: url('images/btn-readmore.png') no-repeat top left;
+}
+.social{
+    width: 200px;
+    float: right;
+    text-align: right;
 }
