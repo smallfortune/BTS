@@ -370,5 +370,48 @@ article.comment {
 
 body{
     background: url('images/bg-white.jpg') repeat top left;
+    color: #363636;
+}
+p{
+    font-size: 12px;
+    line-height: 1.6;
+}
+p a{
+    color: #ce3939;
+}
+.post-news{
+    clear: both;
+    width: 585px;
+    background: url('images/bg-grey.jpg') repeat top left;
+    overflow: hidden;
+    padding: 20px;
+}
+.post-news h2{
+    border-bottom: 1px solid #
+}
+.post-news .thumb{
+    display: block;
+    float: left;
+    width: 270px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+}
+.post-news .thumb img{
+    width: 270px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    display: block;
+}
+.post-footer{
+    width: 585px;
+    padding: 20px;
+    margin-bottom: 50px;
     color: #fff;
+    clear: both;
+    background: url('images/bg-dark_blue.jpg') repeat top left;
 }
