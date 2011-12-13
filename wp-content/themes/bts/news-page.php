@@ -23,7 +23,7 @@ get_header(); ?>
         <?php query_posts('post_type=post&cat=-9');?>
         <?php while (have_posts()) : the_post(); ?>
             <div class="post-news">
-                <div class="top-news">
+                <div class="top-hdr">
                     <h2><?php the_title(); ?></h2>
                 </div>
                 <?php //the_content( 'Read the full post»' ); ?>
@@ -60,7 +60,9 @@ get_header(); ?>
     </div><!-- #primary -->
     <?php rewind_posts(); ?>
     <div id="social_sidebar" class="sidebar">
-        <h2>Subscribe to BTS</h2>
+        <div class="top-hdr">
+            <h2>Subscribe to BTS</h2>
+        </div>
         <ul>
             <li><a href="#" title="" id="feed_twitter">Follow Us @BizTravSuccess</a></li>
             <li><a href="#" title="" id="feed_rss">Get Our RSS Feed</a></li>
@@ -68,7 +70,10 @@ get_header(); ?>
         </ul>
     </div>
     <div class="sidebar">
-        <h2>Categories</h2>
+        <div class="top-hdr">
+            <h2>Categories</h2>
+        </div>
+        <ul>
         <?php 
           $categories=  get_categories(); 
           foreach ($categories as $category) {
@@ -80,10 +85,12 @@ get_header(); ?>
                 echo $li;
           }
          ?>
-        
+        </ul>
     </div>
     <div class="sidebar">
-        <h2>Follow Us on Twitter</h2>
+        <div class="top-hdr">
+            <h2>Follow Us on Twitter</h2>
+        </div>
         <?php rewind_posts();?>
         <?php if (have_posts()) : ?>
         <?php query_posts('post_type=post&cat=9');?>

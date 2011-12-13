@@ -29,7 +29,7 @@ Version: 1.0
     width: 625px;
     overflow: hidden;
     float: left;
-    margin: 0;
+    margin: 0 30px 0 0;
 }
 #main .widget-area {
 	float: right;
@@ -431,16 +431,17 @@ a{
     padding: 20px;
     font-family: verdana;
 }
-.post-news .top-news{
+.top-hdr{
     overflow: hidden;
     border-bottom: 1px solid #fff;
     margin-bottom: 20px;
 }
 
-.post-news .top-news h2{
+.top-hdr h2{
     border-bottom: 1px solid #c2c2c2;
     padding-bottom: 15px;
     font-size: 24px;
+    font-family: verdana;
 }
 .post-news .thumb{
     display: block;
@@ -492,8 +493,9 @@ a{
     padding: 20px;
     background: url('images/bg-grey.jpg') repeat top left;
 }
-#social_sidebar ul li{
+.sidebar ul li{
     list-style: none;
     margin: 0;
     padding: 0;
+    background: url('images/bg-list_border.png') repeat-x bottom left;
 }
