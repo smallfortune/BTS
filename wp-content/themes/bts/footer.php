@@ -11,11 +11,35 @@
 ?>
 
 	</div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo">
-		
-	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+	<footer role="contentinfo">
+            <div class="container">
+                <div class="left">
+                    <h3>The Ten-second Business Travel Success Story...</h3>
+                    <p>Sed ornare dictum mi, sed rutrum metus condimentum sodales. Fusce quis tellus mollis sapien porta placerat. Pellentesque tincidunt augue vitae diam auctor id fermentum ante elementum. estibulum in luctus urna. Vivamus euismod, ligula eu commodo accumsan. </p>
+                    <uL>
+                        <li><span>Email:</span> <a href="mailTo:hello@businesstravelsuccess.com">hello@businesstravelsuccess.com</a></li>
+                        <li><span>Phone:</span> 1 (800) BIZ-TRAV</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h3>Subscribe to BTS</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div id="credits">
+                <div class="container">
+                    <div class="left">
+                        <p>Copywrite <?php echo date('Y'); ?> Business Travel Success. All Rights Reserved.</p>  
+                    </div>
+                    <div class="right">
+                        <p>A <a href="http://smlfrtn.com" target="_blank">Small Fortune</a> Project.</p> 
+                    </div>
+                </div>
+            </div>
+	</footer><!-- #colophon -->
+
 
 <?php wp_footer(); ?>
 
