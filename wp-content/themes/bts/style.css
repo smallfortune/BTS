@@ -24,8 +24,12 @@ Version: 1.0
 	margin: 0 -240px 0 0;
 	width: 100%;
 }
-#content {
-	margin: 0 280px 0 0;
+
+.page-template-news-page-php #primary{
+    width: 625px;
+    overflow: hidden;
+    float: left;
+    margin: 0;
 }
 #main .widget-area {
 	float: right;
@@ -444,4 +448,16 @@ p a{
     width: 200px;
     float: right;
     text-align: right;
+}
+.sidebar{
+    width: 260px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: url('images/bg-grey.jpg') repeat top left;
+}
+#social_sidebar ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
