@@ -69,7 +69,7 @@ get_header(); ?>
             <li><a href="#" title="" id="feed_facebook">Like Us on Facebook</a></li>
         </ul>
     </div>
-    <div class="sidebar">
+    <div class="sidebar" id="twitter_feed_sidebar">
         <div class="top-hdr">
             <h2>Categories</h2>
         </div>
@@ -86,6 +86,9 @@ get_header(); ?>
           }
          ?>
         </ul>
+    </div>
+    <div id="follow_twitter">
+        <a href="#" title="#">followus</a>
     </div>
     <div class="sidebar">
         <div class="top-hdr">

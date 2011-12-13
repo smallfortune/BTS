@@ -493,9 +493,17 @@ a{
     padding: 20px;
     background: url('images/bg-grey.jpg') repeat top left;
 }
+#twitter_feed_sidebar{
+    margin-bottom: 0;
+}
+#follow_twitter{
+    background: url('images/bg-dark_blue.jpg') repeat top left;
+    width: 260px;
+    margin-bottom: 20px;
+}
 .sidebar ul li{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 8px 0;
     background: url('images/bg-list_border.png') repeat-x bottom left;
 }
