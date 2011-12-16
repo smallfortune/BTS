@@ -58,7 +58,7 @@ get_header(); ?>
         <?php endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
-    <?php rewind_posts(); ?>
+    
     <div id="social_sidebar" class="sidebar">
         <div class="top-hdr">
             <h2>Subscribe to BTS</h2>
@@ -87,10 +87,8 @@ get_header(); ?>
          ?>
         </ul>
     </div>
-    <div id="follow_twitter">
-        <a href="#" title="#">followus</a>
-    </div>
-    <div class="sidebar">
+    <div class="sidebar" id="twitter_feed_wrap">
+        <div class="container">
         <div class="top-hdr">
             <h2>Follow Us on Twitter</h2>
         </div>
@@ -103,7 +101,10 @@ get_header(); ?>
         <?php else:?>
             <p>no tweets today</p>
         <?php endif;?>
+        
+        </div>
+        <div id="follow_twitter">
+            <a href="#" title="#">followus</a>
+        </div>
     </div>
-    
-
 <?php get_footer(); ?>

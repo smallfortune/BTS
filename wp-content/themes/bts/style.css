@@ -496,10 +496,37 @@ a{
 #twitter_feed_sidebar{
     margin-bottom: 0;
 }
+#twitter_feed_wrap{
+    width: 300px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0;
+    background: url('images/bg-grey.jpg') repeat top left;
+}
+#twitter_feed_wrap .container{
+    padding: 20px 20px 0 20px;
+}
+#twitter_feed_wrap #follow_twitter{
+    width: 280px;
+    padding: 10px;
+    
+}
+#twitter_feed_wrap #follow_twitter a{
+    display: block;
+    width: 278px;
+    height: 40px;
+    background: url('images/btn-follow_us.png') no-repeat bottom left;
+    text-indent: -99999px;
+}
+#twitter_feed_wrap #follow_twitter a:hover{
+    background: url('images/btn-follow_us.png') no-repeat top left;
+}
 #follow_twitter{
     background: url('images/bg-dark_blue.jpg') repeat top left;
     width: 260px;
     margin-bottom: 20px;
+    clear: both;
+    margin: 0;
 }
 .sidebar ul li{
     list-style: none;
