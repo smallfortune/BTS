@@ -56,6 +56,7 @@
                     </div>
                 </div>
                 <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
+                <?php include(TEMPLATEPATH. '/includes/book.php');?>
                 <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
             </div>
         </div>

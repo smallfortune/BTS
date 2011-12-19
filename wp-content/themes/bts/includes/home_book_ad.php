@@ -1,0 +1,1 @@
+<a href="#"><img src="<?php bloginfo('template_url');?>/images/ad_book_ad_top.png"/></a>

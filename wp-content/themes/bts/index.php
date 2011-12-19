@@ -17,7 +17,7 @@ get_header(); ?>
 
 <div id="primary">
     <div id="content" role="main">
-        <h1>test</h1>
+        <?php include(TEMPLATEPATH . '/includes/home_book_ad.php'); ?>
        
 
     </div><!-- #content -->

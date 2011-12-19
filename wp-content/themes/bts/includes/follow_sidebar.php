@@ -1,8 +1,8 @@
 <div class="sidebar" id="twitter_feed_wrap">
     <div class="container">
-    <div class="top-hdr">
-        <h2>Follow Us on Twitter</h2>
-    </div>
+  
+        <h2>Twitter</h2>
+    
     <?php rewind_posts();?>
     <?php if (have_posts()) : ?>
     <?php query_posts('post_type=post&cat=4');?>

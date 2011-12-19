@@ -31,19 +31,19 @@ Version: 1.0
 #bottom_half{
     background: url('images/bg-medium_grey.jpg') repeat top left;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     padding: 20px 0 0 0;
     border-top: 1px solid #DADADA;
 }
 #bottom_half_wrap{
     width: 960px;
     margin: 0 auto;
-    overflow: hidden;
+   
 }
 #bottom_half_wrap #twitter_feed_wrap{
     width: 216px;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     overflow: hidden;
 }
 #news_home_wrap{
@@ -51,9 +51,12 @@ Version: 1.0
     overflow: hidden;
     float: left;
 }
+#news_home_wrap h2{
+    margin-bottom: 20px;
+}
 #news_home_wrap .post-footer{
-    width: 460px;
-    
+    width: 440px;
+    padding: 10px;
 }
 #bottom_half_wrap #news_home{
     width: 420px;
@@ -70,6 +73,13 @@ Version: 1.0
 #bottom_half_wrap #news_home .post-news .thumb{
     width: 90px;
     height: 90px;
+    border-radius: 5px;
+}
+#bottom_half_wrap #news_home .post-news h2{
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 5px;
 }
 #bottom_half_wrap #news_home .post-news .thumb img{
     width: 90px;
@@ -646,11 +656,13 @@ a{
     width: 585px;
     padding: 20px;
     margin-bottom: 50px;
+    text-align: center;
     color: #fff;
     clear: both;
     overflow: hidden;
     background: url('images/bg-dark_blue.jpg') repeat top left;
 }
+
 .post-footer a.read_more_news{
     display: block;
     width: 195px;
@@ -658,6 +670,17 @@ a{
     float: left;
     box-shadow: 3px 3px 30px #000;
     background: url('images/btn-readmore.png') no-repeat bottom left;
+}
+.home .post-footer a.read_more_news{
+    display: block;
+    width: 195px;
+    height: 40px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 30px #000;
+    background: url('images/btn-view_more_posts.png') no-repeat bottom left;
+}
+.home .post-footer a.read_more_news:hover{
+    background: url('images/btn-view_more_posts.png') no-repeat top left;
 }
 .post-footer a.read_more_news:hover{
     background: url('images/btn-readmore.png') no-repeat top left;
@@ -715,6 +738,16 @@ a{
     background: url('images/btn-follow_us.png') no-repeat bottom left;
     text-indent: -99999px;
 }
+.home #twitter_feed_wrap #follow_twitter a{
+    display: block;
+    width: 195px;
+    height: 40px;
+    background: url('images/btn-follow_small.png') no-repeat bottom left;
+    text-indent: -99999px;
+}
+.home #twitter_feed_wrap #follow_twitter a:hover{
+    background: url('images/btn-follow_small.png') no-repeat top left;
+}
 #twitter_feed_wrap #follow_twitter a:hover{
     background: url('images/btn-follow_us.png') no-repeat top left;
 }
@@ -732,6 +765,11 @@ a{
     padding: 20px;
     background: url('images/bg-grey.jpg') repeat top left;
 }
+.sidebar h2{
+    background: none;
+    margin-bottom: 20px;
+}
+
 .sidebar ul li{
     list-style: none;
     margin: 0; 
@@ -744,4 +782,56 @@ a{
 }
 .sidebar ul li a:hover{
     text-decoration: underline;
+}
+.home #buy_book_widget{
+    float: left;
+    margin-left: 30px;
+}
+#buy_book_widget{
+    background: url('images/bg-blue.jpg') repeat top left;
+    color: #fff;
+    width: 215px;
+    position: relative;
+    overflow: visible;
+}
+#buy_book_widget img{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+#buy_book_widget p{
+    color: #99b1dc;
+}
+#buy_book_widget .top,
+#buy_book_widget .middle{
+    padding: 20px;
+}
+#buy_book_widget .top h2{
+    width: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#buy_book_widget .top{
+    padding-top: 40px;
+    padding-bottom: 0;
+
+}
+#buy_book_widget .top p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    background: url('images/bg-bts_book_top.png') repeat-x bottom left;
+}
+.home #buy_book_widget #btn_buy{
+    display: block;
+    width: 195px;
+    height: 40px;
+    background: url('images/btn-learn_more_small.png') no-repeat bottom left;
+    text-indent: -99999px;
+    
+}
+#buy_book_widget .bottom{
+    overflow: hidden;
+    padding: 10px;
+    clear: both;
+    background: url('images/bg-dark_Blue.jpg') repeat top left;
 }
