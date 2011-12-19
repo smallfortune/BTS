@@ -188,7 +188,7 @@ a#purchase:hover{
 
 header#branding{
     overflow: hidden;
-    padding: 20px 0;
+    padding: 10px 0;
     background: url('images/bg-blue.jpg') repeat top left;
 }
 header#branding nav{
@@ -205,8 +205,8 @@ header#branding nav h1{
 header#branding nav h1 a{
     display: block;
     background: url('images/img-logo.png') no-repeat top left;
-    width: 217px;
-    height: 85px;
+    width: 242px;
+    height: 95px;
     text-indent: -99999px;
 }
 
@@ -215,6 +215,7 @@ header#branding nav h1 a{
 header#branding nav #menu_right{
     width: 490px;
     float: right;
+    padding-top: 10px;
     
 }
 header#branding nav #menu_right .menu,
@@ -544,7 +545,9 @@ footer .container .right p{
     font-size: 14px;
     line-height: 1.6;
 }
-
+footer .container .right p{
+    margin-bottom: 20px;
+}
 footer h3{
     font-size: 16px;
     margin-bottom: 10px;
@@ -591,6 +594,7 @@ footer #credits .container{
 }
 footer #credits .container p{
     font-size: 12px;
+    margin: 0;
 }
 footer #credits .container .right p{
     text-align: right;
@@ -830,6 +834,9 @@ a{
     text-indent: -99999px;
     
 }
+.home #buy_book_widget a#btn_buy:hover{
+    background: url('images/btn-learn_more_small.png') no-repeat top left;
+}
 #buy_book_widget .bottom{
     overflow: hidden;
     padding: 10px;
@@ -900,4 +907,64 @@ a{
     height: 154px;
     overflow: hidden;
     margin-bottom: 30px;
+}
+#cc{
+    background: url('images/bg-dark_blue.jpg') repeat top left;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 217px;
+    padding: 2px;
+}
+
+footer .input_cc{
+    padding: 5px;
+    display: block;
+    float: left;
+    background: none;
+    border: none;
+    color: #fff;
+}
+footer .submit{
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    float: right;
+    color: #000;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(top, #ffffff 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    padding: 5px 15px;
+}
+footer .submit:hover{
+    opacity: .8;
+}
+input[type="text"]{
+    width: auto;
+    margin: 0;
+}
+#two_col{
+    background: none;
+    overflow: hidden;
+    clear: both;
+    width: 960px;
+}
+#two_col .col{
+    float: left;
+    width: 420px;
+    padding: 20px;
+    background: url('images/bg-grey.jpg') repeat top left;
+}
+#two_col .col.first{
+    margin-right: 40px;
+}
+#two_col .col .post-news{
+    width: auto;
+    background: none;
+    padding: 0;
+    color: #363636;
 }

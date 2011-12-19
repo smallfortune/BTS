@@ -13,7 +13,8 @@ $(function(){
   //var caches the default value which is assigned in 
 	//the html with the attr(value) for the input
 	var searchDefault = $('#search').val();
-	
+	var emailDefault = $('.input_cc').val();
+        
 	//when the cursor is in the input clear the default value
 	$('#search').focus(function() {
 		if($('#search').val() == searchDefault){
@@ -29,6 +30,24 @@ $(function(){
 		if($(this).val() == ""){
 			
 			$(this).val(searchDefault);	
+			
+		}
+				
+	});
+        $('.input_cc').focus(function() {
+		if($('.input_cc').val() == emailDefault){
+			
+			$(this).val("");
+			
+		}
+	 
+	});  
+	//when the cursor exits the input restore the default
+	$('.input_cc').blur(function() { 
+				 
+		if($(this).val() == ""){
+			
+			$(this).val(emailDefault);	
 			
 		}
 				

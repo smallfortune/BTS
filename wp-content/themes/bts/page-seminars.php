@@ -34,6 +34,43 @@ get_header(); ?>
         
         </div><!-- #content -->
     </div><!-- #primary -->
+    <div id="two_col">
+        <div class="col first">
+            <?php rewind_posts();?>
+            <?php if (have_posts()) : ?>
+            <?php query_posts('post_type=post&p=87');?>
+            <?php while (have_posts()) : the_post(); ?>
+                
+                <div class="post-news">
+                <div class="top-hdr">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+                <div class="excerpt">
+                    <?php get_template_part( 'content', 'page' ); ?>
+                </div>
+            </div>
+            <?php endwhile;?>
+            <?php else : ?>
+            <?php endif; ?>
+        </div>
+        <div class="col">
+            <?php rewind_posts();?>
+            <?php if (have_posts()) : ?>
+            <?php query_posts('post_type=post&p=93');?>
+            <?php while (have_posts()) : the_post(); ?>
+            <div class="post-news">
+                <div class="top-hdr">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+                <div class="excerpt">
+                    <?php get_template_part( 'content', 'page' ); ?>
+                </div>
+            </div>
+            <?php endwhile;?>
+            <?php else : ?>
+            <?php endif; ?>
+        </div>
+    </div>
     <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
     
    
