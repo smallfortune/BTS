@@ -25,11 +25,16 @@ Version: 1.0
 	width: 100%;
 }
 
-.page-template-news-page-php #primary{
+.page-template-news-page-php #primary,
+.search #primary,
+.archive #primary,
+.single #primary,
+.page-template-page-about-php #primary{
     width: 625px;
     overflow: hidden;
     float: left;
     margin: 0 30px 0 0;
+    min-height: 2000px;
 }
 #main .widget-area {
 	float: right;
@@ -41,7 +46,21 @@ Version: 1.0
 	display: block;
 	width: 100%;
 }
-
+.entry-header{
+    display: none;
+}
+.entry-content h2{
+    padding: 0 0 15px 0;
+    margin: 0 0 20px 0;
+    background: url('images/bg-list_border.png') repeat-x bottom left;
+}
+.entry-content p{
+    margin-bottom: 20px;
+}
+.entry-content img{
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 2px #757373;
+}
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
@@ -104,12 +123,13 @@ header#branding nav h1 a{
 /* =Menu
 -------------------------------------------------------------- */
 header#branding nav #menu_right{
-    width: 500px;
+    width: 490px;
     float: right;
     
 }
-header#branding nav #menu_right .menu{
-    width: 100%;
+header#branding nav #menu_right .menu,
+header#branding nav #menu_right .menu ul{
+    width: 500px;
     overflow: hidden;
     clear: both;
 }
@@ -197,6 +217,46 @@ header#branding nav #menu_right .menu ul li a{
 	background: #eee;
 	display: block;
 	padding: 1em;
+}
+#search_form_wrap{
+    float: right;
+    margin-bottom: 20px; 
+}
+
+#search_form{
+    overflow: hidden;
+    background: url('images/bg-dark_blue.jpg') repeat top left;
+    border-radius: 6px;
+    width: 200px;
+    height: 29px;
+}
+#search_form input{
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px;
+
+}
+#search_form ul{
+    overflow: hidden;
+    margin: 0;
+}
+#search_form li{
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+#search_form li.left,
+#search_form li.left input{
+    width: 170px;
+}
+#search_form li.right,
+#search_form li.right input{
+    width: 30px;
+}
+#search_form li.right input{
+    width: 15px;
+    height: 17px;
 }
 
 /* Image Attachments */
@@ -380,6 +440,18 @@ footer{
     background: url('images/bg-blue.jpg') repeat top left;
     margin: 0;
     padding: 0;
+   
+}
+footer .container .left p,
+footer .container .right p{
+    color: #bfcbe0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer h3{
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 footer .container{
     width: 960px;
@@ -393,6 +465,18 @@ footer .container .left{
     float: left;
     overflow: hidden;
 }
+footer .container .left ul li{
+    float: left;
+    display: block;
+    font-size: 14px;
+    margin: 20px 20px 0 0;
+}
+footer .container .left ul li a{
+    color: #fff;
+}
+footer .container .left ul li span{
+    color: #bfcbe0;
+}
 footer .container .right{
     width: 300px;
     float: right;
@@ -400,13 +484,17 @@ footer .container .right{
 }
 footer #credits{
     width: 100%;
-    background: url('images/bg-dark_blue.jpg') repeat top left;
+    background: url('images/bg-credits.png') repeat top left;
     overflow: hidden;
     
 }
 footer #credits .container{
     padding: 10px 0;
     color: #8791a4;
+    
+}
+footer #credits .container p{
+    font-size: 12px;
 }
 footer #credits .container .right p{
     text-align: right;
@@ -414,6 +502,7 @@ footer #credits .container .right p{
 body{
     background: url('images/bg-white.jpg') repeat top left;
     color: #363636;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 p{
     font-size: 11px;
@@ -422,6 +511,7 @@ p{
 a{
     color: #ce3939;
     text-decoration: none;
+    font-family: Helvetic Neue, Helvectica, sans-serif;
 }
 .post-news{
     clear: both;
@@ -486,19 +576,28 @@ a{
     float: right;
     text-align: right;
 }
-.sidebar{
-    width: 260px;
-    float: left;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: url('images/bg-grey.jpg') repeat top left;
+#social_sidebar ul li a{
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+#social_sidebar ul li #feed_twitter{
+    background: url('images/icn-twitter.png') no-repeat center left;
+}
+#social_sidebar ul li #feed_facebook{
+    background: url('images/icn-facebook.png') no-repeat center left;
+}
+#social_sidebar ul li #feed_rss{
+    background: url('images/icn-rss.png') no-repeat center left;
 }
 #twitter_feed_sidebar{
     margin-bottom: 0;
 }
 #twitter_feed_wrap{
     width: 300px;
-    float: left;
+    float: right;
     margin-bottom: 20px;
     padding: 0;
     background: url('images/bg-grey.jpg') repeat top left;
@@ -510,6 +609,13 @@ a{
     width: 280px;
     padding: 10px;
     
+}
+#twitter_feed_wrap ul li{
+    font-size: 12px;
+}
+#twitter_feed_wrap ul li a{
+    padding: 0;
+    display: inline;
 }
 #twitter_feed_wrap #follow_twitter a{
     display: block;
@@ -528,9 +634,23 @@ a{
     clear: both;
     margin: 0;
 }
+.sidebar{
+    width: 260px;
+    float: right;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: url('images/bg-grey.jpg') repeat top left;
+}
 .sidebar ul li{
     list-style: none;
-    margin: 0;
-    padding: 8px 0;
+    margin: 0; 
     background: url('images/bg-list_border.png') repeat-x bottom left;
+}
+.sidebar ul li a{
+    font-size: 15px;
+    display: block;
+    padding: 8px 0;
+}
+.sidebar ul li a:hover{
+    text-decoration: underline;
 }

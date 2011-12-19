@@ -25,7 +25,7 @@
                 </div>
                 <div class="right">
                     <h3>Subscribe to BTS</h3>
-                    <p></p>
+                    <p>Sed ornare dictum mi, sed rutrum metus condimentum sodales.</p>
                 </div>
             </div>
             <div id="credits">
@@ -42,6 +42,9 @@
 
 
 <?php wp_footer(); ?>
-
+        <script src="<?php bloginfo('template_url');?>/js/libs/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_url');?>/js/libs/jquery-ui.min.js"></script>
+        <script src="<?php bloginfo('template_url');?>/js/plugins.js"></script>
+        <script src="<?php bloginfo('template_url');?>/js/scripts.js"></script>
 </body>
 </html>

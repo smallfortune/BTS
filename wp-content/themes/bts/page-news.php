@@ -20,7 +20,7 @@ get_header(); ?>
     <div id="content" role="main">
    
     <?php if (have_posts()) : ?>
-        <?php query_posts('post_type=post&cat=-9');?>
+        <?php query_posts('post_type=post&cat=-4');?>
         <?php while (have_posts()) : the_post(); ?>
             <div class="post-news">
                 <div class="top-hdr">
@@ -43,6 +43,7 @@ get_header(); ?>
                     <script charset="utf-8" type="text/javascript">var switchTo5x=true;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'wp.e5e164fb-0493-4667-b8f5-468dd1e6d80f'});var st_type='wordpress3.2.1';</script>
                 </div>
             </div>
+        <div class="navigation"><p><?php posts_nav_link('&#8734;','Go Forward In Time','Go Back in Time'); ?></p></div>
         <?php endwhile;?>
         <?php else : ?>
             <article id="post-0" class="post no-results not-found">
@@ -58,53 +59,11 @@ get_header(); ?>
         <?php endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
+    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
+    <?php include(TEMPLATEPATH . '/includes/social_sidebar.php'); ?>
     
-    <div id="social_sidebar" class="sidebar">
-        <div class="top-hdr">
-            <h2>Subscribe to BTS</h2>
-        </div>
-        <ul>
-            <li><a href="#" title="" id="feed_twitter">Follow Us @BizTravSuccess</a></li>
-            <li><a href="#" title="" id="feed_rss">Get Our RSS Feed</a></li>
-            <li><a href="#" title="" id="feed_facebook">Like Us on Facebook</a></li>
-        </ul>
-    </div>
-    <div class="sidebar" id="twitter_feed_sidebar">
-        <div class="top-hdr">
-            <h2>Categories</h2>
-        </div>
-        <ul>
-        <?php 
-          $categories=  get_categories(); 
-          foreach ($categories as $category) {
-                $li = '<li>';
-                $li .= '<a href='. get_category_link( $category->term_id ) .'>';
-                $li .= $category->cat_name;
-                $li .= '</a>';
-                $li .= '</li>';
-                echo $li;
-          }
-         ?>
-        </ul>
-    </div>
-    <div class="sidebar" id="twitter_feed_wrap">
-        <div class="container">
-        <div class="top-hdr">
-            <h2>Follow Us on Twitter</h2>
-        </div>
-        <?php rewind_posts();?>
-        <?php if (have_posts()) : ?>
-        <?php query_posts('post_type=post&cat=9');?>
-        <?php while (have_posts()) : the_post(); ?>
-            <?php the_content();?>
-        <?php endwhile;?>
-        <?php else:?>
-            <p>no tweets today</p>
-        <?php endif;?>
-        
-        </div>
-        <div id="follow_twitter">
-            <a href="#" title="#">followus</a>
-        </div>
-    </div>
+    <?php include(TEMPLATEPATH . '/includes/cats_sidebar.php'); ?>
+    <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
+    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
+    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
 <?php get_footer(); ?>
