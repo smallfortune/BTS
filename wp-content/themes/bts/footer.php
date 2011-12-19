@@ -12,7 +12,57 @@
 
 	</div><!-- #main -->
 </div><!-- #page -->
+        <?php if (is_home()):?>
+        <div id="bottom_half">
+            <div id="bottom_half_wrap">
+                
+                <div id="news_home_wrap">
+                    <div id="news_home">
+                        <h2>News &amp; Updates</h2>
+                        <?php if (have_posts()) : ?>
+                            <?php query_posts('post_type=post&cat=-4');?>
+                            <?php while (have_posts()) : the_post(); ?>
+                        <div class="post-news">
+                            <?php if(has_post_thumbnail()):?>
+                            <div class="thumb">
+                                <a href="<?php the_permalink();?>"><?php the_post_thumbnail('medium');?></a>
+                            </div>
+                            <?php endif;?>
+                            <div class="excerpt">
 
+                                <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+
+                                <?php the_excerpt('Read the full post»' );?>
+                            </div>
+                        </div>
+                        <?php endwhile;?>
+                        <?php else : ?>
+                            <article id="post-0" class="post no-results not-found">
+                                <header class="entry-header">
+                                    <h1 class="entry-title">Nothing Found</h1>
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
+                                    <?php get_search_form(); ?>
+                                </div><!-- .entry-content -->	                                
+                            </article><!-- #post-0 -->
+                        <?php endif; ?>
+                        
+                    </div>
+                    <div class="post-footer">
+                        <a href="<?php the_permalink(); ?>" title="read more" class="read_more_news"></a>
+
+                    </div>
+                </div>
+                <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
+                <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
+            </div>
+        </div>
+        <?php else:?>
+
+        <?php endif;?>
+    
 	<footer role="contentinfo">
             <div class="container">
                 <div class="left">

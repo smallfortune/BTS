@@ -34,10 +34,7 @@ get_header(); ?>
         
         </div><!-- #content -->
     </div><!-- #primary -->
-    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
-    <?php include(TEMPLATEPATH . '/includes/social_sidebar.php'); ?>
+    <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
     
-    
-    <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
    
 <?php get_footer(); ?>

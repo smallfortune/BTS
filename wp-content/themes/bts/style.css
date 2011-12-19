@@ -20,22 +20,82 @@ Version: 1.0
 	margin: 1em;
 }
 #primary {
-	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#primary #content{
+    overflow: hidden;
+}
+#bottom_half{
+    background: url('images/bg-medium_grey.jpg') repeat top left;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #DADADA;
+}
+#bottom_half_wrap{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#bottom_half_wrap #twitter_feed_wrap{
+    width: 216px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+#news_home_wrap{
+    width: 460px;
+    overflow: hidden;
+    float: left;
+}
+#news_home_wrap .post-footer{
+    width: 460px;
+    
+}
+#bottom_half_wrap #news_home{
+    width: 420px;
+    padding: 20px;
+    overflow: hidden;
+    background: url('images/bg-grey.jpg') repeat top left;
+}
+#bottom_half_wrap #news_home .post-news{
+    background: url('images/bg-list_border.png') repeat-x bottom left;
+    width: 420px;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+#bottom_half_wrap #news_home .post-news .thumb{
+    width: 90px;
+    height: 90px;
+}
+#bottom_half_wrap #news_home .post-news .thumb img{
+    width: 90px;
+    height: 90px;
+}
+body.home{
+    background: url('images/bg-light.jpg') repeat top left;
 }
 
 .page-template-news-page-php #primary,
 .search #primary,
 .archive #primary,
 .single #primary,
-.page-template-page-about-php #primary{
+.page-template-page-about-php #primary,
+.page-template-page-publications-php #primary{
     width: 625px;
     overflow: hidden;
     float: left;
     margin: 0 30px 0 0;
     min-height: 2000px;
 }
+.page-template-page-publications-php #primary,
+.page-template-page-about-php #primary{
+    min-height: 1000px;
+}
+
 #main .widget-area {
 	float: right;
 	overflow: hidden;
@@ -54,12 +114,31 @@ Version: 1.0
     margin: 0 0 20px 0;
     background: url('images/bg-list_border.png') repeat-x bottom left;
 }
+.entry-content h3{
+    color: #ce3939;
+    font-size: 16px;
+}
 .entry-content p{
     margin-bottom: 20px;
 }
 .entry-content img{
     border: 5px solid #fff;
     box-shadow: 0px 0px 2px #757373;
+}
+.page-template-page-publications-php .entry-content img{
+    border: none;
+    box-shadow: none;
+}
+#purchase{
+    display: block;
+    overflow: hidden;
+    background: url('images/btn-purchase.png') no-repeat bottom left;
+    width: 278px;
+    height: 40px;
+    text-indent: -99999px;
+}
+a#purchase:hover{
+    background: url('images/btn-purchase.png') no-repeat top left;
 }
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
@@ -431,6 +510,12 @@ article.comment {
 
 /* =Footer
 -------------------------------------------------------------- */
+#ad_footer{
+    width: 727px;
+    margin: 30px auto;
+    clear: both;
+    overflow: hidden;
+}
 
 #colophon {
 	padding: 1em 0 0;
@@ -513,6 +598,7 @@ a{
     text-decoration: none;
     font-family: Helvetic Neue, Helvectica, sans-serif;
 }
+
 .post-news{
     clear: both;
     width: 585px;
@@ -520,6 +606,11 @@ a{
     overflow: hidden;
     padding: 20px;
     font-family: verdana;
+}
+.page-template-page-seminars-php .post-news{
+    width: 920px;
+    background: url('images/bg-blue.jpg') repeat top left;
+    color: #fff;
 }
 .top-hdr{
     overflow: hidden;
