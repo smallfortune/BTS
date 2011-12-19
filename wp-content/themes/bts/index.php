@@ -25,10 +25,10 @@ get_header(); ?>
         <div class="images">
 
         <?php if (have_posts()) : ?>
-        <?php query_posts('post_type=slides');?>
+        <?php query_posts('post_type=slides&orderby=title');?>
         <?php while (have_posts()) : the_post(); ?>
                     <div>
-                        <?php the_title();?>
+                        <h1><?php the_title();?></h1>
                         <?php the_content();?>
                     </div>
         <?php endwhile;?>

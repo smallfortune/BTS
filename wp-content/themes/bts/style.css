@@ -24,6 +24,7 @@ Version: 1.0
     overflow: hidden;
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 #primary #content{
     overflow: hidden;
@@ -838,5 +839,65 @@ a{
 .backward{
     display: block;
     text-indent: -99999px;
-    
+    background: url('images/btn-left_slide.png') no-repeat top left;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    cursor: pointer;
+}
+.forward{
+    display: block;
+    text-indent: -99999px;
+    background: url('images/btn-right_slide.png') no-repeat top left;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 300px;
+    right: 0;
+    cursor: pointer;
+}
+.images{
+    position: relative;
+    min-height: 300px;
+}
+.images div{
+    position: absolute;
+    height: 300px;
+    top:0;
+    display: none;
+    padding: 0 80px;
+}
+.images div h1{
+    font-family: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.images div p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.home .images div a{
+    display: block;
+    width: 195px;
+    height: 40px;
+    background: url('images/btn-learn_more_small.png') no-repeat bottom left;
+    text-indent: -99999px;
+    box-shadow: 3px 3px 10px #bbbbbb;
+}
+.home .images div img{
+    box-shadow: 3px 3px 10px #bbbbbb;
+    margin-left: 20px;
+}
+.home .images div a:hover{
+    background: url('images/btn-learn_more_small.png') no-repeat top left;
+}
+#ad_home_book{
+    display: block;
+    clear: both;
+    width: 960px;
+    height: 154px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }

@@ -8,7 +8,7 @@
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.</p>
     </div>
     <div class="bottom">
-        <a id="btn_buy" href="#" title="#">Buy Book</a>
+        <a id="btn_buy" href="/publications" title="#">Buy Book</a>
     </div>
 
 </div>
