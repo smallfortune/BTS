@@ -95,6 +95,7 @@
 <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_url');?>/js/libs/jquery.min.js"></script>
         <script src="<?php bloginfo('template_url');?>/js/libs/jquery-ui.min.js"></script>
+        <script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
         <script src="<?php bloginfo('template_url');?>/js/plugins.js"></script>
         <script src="<?php bloginfo('template_url');?>/js/scripts.js"></script>
 </body>

@@ -18,8 +18,38 @@ get_header(); ?>
 <div id="primary">
     <div id="content" role="main">
         <?php include(TEMPLATEPATH . '/includes/home_book_ad.php'); ?>
-       
+        
+        <a class="backward">back</a>
 
+        <!-- container for the slides -->
+        <div class="images">
+
+        <?php if (have_posts()) : ?>
+        <?php query_posts('post_type=slides');?>
+        <?php while (have_posts()) : the_post(); ?>
+                    <div>
+                        <?php the_title();?>
+                        <?php the_content();?>
+                    </div>
+        <?php endwhile;?>
+        <?php else : ?>
+            
+        <?php endif; ?>
+        
+            <!-- first slide -->
+
+
+        </div>
+
+        <!-- "next slide" button -->
+        <a class="forward">forward</a>
+
+        <!-- the tabs -->
+        <div class="slidetabs">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
     </div><!-- #content -->
 </div><!-- #primary -->
 
