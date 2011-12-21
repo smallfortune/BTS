@@ -30,7 +30,7 @@ get_header(); ?>
             </div>
            
         <?php endwhile;?>
-        
+        <?php gravity_form(1, false, false, false, '', false); ?>
         
         </div><!-- #content -->
     </div><!-- #primary -->
@@ -71,7 +71,10 @@ get_header(); ?>
             <?php endif; ?>
         </div>
     </div>
-    <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
+    
+    <div id="ad_footer">
+        <?php dynamic_sidebar('Footer Ad Space'); ?>
+    </div>
     
    
 <?php get_footer(); ?>

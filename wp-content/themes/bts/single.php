@@ -14,10 +14,13 @@ get_header(); ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <?php toolbox_content_nav('nav-above'); ?>
-
-            <?php get_template_part('content', 'single'); ?>
-
+            
+            <div class="the_content">
+                <div class="top-hdr">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+                <?php get_template_part('content', 'single'); ?>
+            </div>
             <?php toolbox_content_nav('nav-below'); ?>
 
             <?php comments_template('', true); ?>

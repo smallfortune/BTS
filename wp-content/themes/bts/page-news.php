@@ -40,7 +40,7 @@ get_header(); ?>
                 <a href="<?php the_permalink(); ?>" title="read more" class="read_more_news"></a>
                 <div class="social">
                     <p class="date"><?php the_time('F jS, Y') ?></p>
-                    <script charset="utf-8" type="text/javascript">var switchTo5x=true;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'wp.e5e164fb-0493-4667-b8f5-468dd1e6d80f'});var st_type='wordpress3.2.1';</script>
+                    <span class='st_facebook_buttons' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='share'></span><span class='st_twitter_buttons' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='share'></span><span class='st_plusone_buttons' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='share'></span>
                 </div>
             </div>
         <div class="navigation"><p><?php posts_nav_link('&#8734;','Go Forward In Time','Go Back in Time'); ?></p></div>
@@ -59,11 +59,14 @@ get_header(); ?>
         <?php endif; ?>
         </div><!-- #content -->
     </div><!-- #primary -->
-    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
+    <div class="sidebar">
+        <?php dynamic_sidebar('Faatured Ad Space'); ?>
+    </div>
     <?php include(TEMPLATEPATH . '/includes/social_sidebar.php'); ?>
     
     <?php include(TEMPLATEPATH . '/includes/cats_sidebar.php'); ?>
     <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
-    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
-    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
+    <div class="sidebar secondary_ad">
+        <?php dynamic_sidebar('Secondary Ad Space'); ?>
+    </div>
 <?php get_footer(); ?>

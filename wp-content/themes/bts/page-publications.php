@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Publications
@@ -34,7 +33,9 @@ get_header(); ?>
         
         </div><!-- #content -->
     </div><!-- #primary -->
-    <?php include(TEMPLATEPATH . '/includes/ads.php'); ?>
+    <div class="sidebar">
+        <?php dynamic_sidebar('Faatured Ad Space'); ?>
+    </div>
     <?php include(TEMPLATEPATH . '/includes/social_sidebar.php'); ?>
     
     

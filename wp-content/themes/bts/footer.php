@@ -57,7 +57,9 @@
                 </div>
                 <?php include(TEMPLATEPATH . '/includes/follow_sidebar.php'); ?>
                 <?php include(TEMPLATEPATH. '/includes/book.php');?>
-                <?php include(TEMPLATEPATH . '/includes/ads_footer.php'); ?>
+                <div id="ad_footer">
+                    <?php dynamic_sidebar('Footer Ad Space'); ?>
+                </div>
             </div>
         </div>
         <?php else:?>

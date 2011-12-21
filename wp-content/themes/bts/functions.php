@@ -307,3 +307,26 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
  */
+register_sidebar(array(
+  'name' => 'Footer Ad Space',
+  'id' => 'footer-ad',
+  'description' => 'ads in this area will show up in the footer',
+  'before_title' => '<h1>',
+  'after_title' => '</h1>'
+));
+
+register_sidebar(array(
+  'name' => 'Faatured Ad Space',
+  'id' => 'featured-ad',
+  'description' => 'ads in this area will show up in the footer',
+  'before_title' => '<h1>',
+  'after_title' => '</h1>'
+));
+
+register_sidebar(array(
+  'name' => 'Secondary Ad Space',
+  'id' => 'secondary-ad',
+  'description' => 'ads in this area will show up in the footer',
+  'before_title' => '<h1>',
+  'after_title' => '</h1>'
+));
